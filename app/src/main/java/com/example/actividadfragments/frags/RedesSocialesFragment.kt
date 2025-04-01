@@ -28,8 +28,8 @@ class RedesSocialesFragment : Fragment() {
 
     companion object {
 
-        private const val ARG_NOMBRE = "NombreStandar"
-        private const val ARG_APELLIDO = "ApellidoStandar"
+        const val ARG_NOMBRE = "NombreStandar"
+        const val ARG_APELLIDO = "ApellidoStandar"
 
         @JvmStatic
         fun newInstance(param1: String, param2: String) =

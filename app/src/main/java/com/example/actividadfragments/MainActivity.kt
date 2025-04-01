@@ -1,23 +1,27 @@
 package com.example.actividadfragments
 
 import android.os.Bundle
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.example.actividadfragments.ui.theme.ActividadFragmentsTheme
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.os.bundleOf
+import com.example.actividadfragments.frags.RedesSocialesFragment.Companion.ARG_APELLIDO
+import com.example.actividadfragments.frags.RedesSocialesFragment.Companion.ARG_NOMBRE
+
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+        setContentView(R.layout.main_activity)
+
+        if (savedInstanceState == null){
+
+            val bundle = bundleOf(ARG_NOMBRE to "Juliana", ARG_APELLIDO to "Perez")
+
+
+
+        }
     }
 
 }
